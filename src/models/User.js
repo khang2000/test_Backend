@@ -19,24 +19,6 @@ const userSchema = new mongoose.Schema(
       type: String,
       default: "member",
     },
-    addressBorn: {
-      type: String,
-    },
-    image: {
-      type: String,
-    },
-    birthday: {
-      type: String,
-    },
-    position: {
-      type: String,
-    },
-    id_number: {
-      type: String,
-    },
-    description: {
-      type: String,
-    },
   },
 
   { versionKey: false, timestamps: true }

@@ -18,7 +18,7 @@ export const signUpValidator = Joi.object({
     "string.max": "password phai co it hon {#limit + 1} ky tu",
   }),
   confirmPassword: Joi.string()
-    // .required()
+    .required()
     .min(6)
     .max(255)
     .valid(Joi.ref("password"))
@@ -29,13 +29,6 @@ export const signUpValidator = Joi.object({
       "string.max": "Mật khẩu phai co it hon {#limit + 1} ky tu",
       "any.only": "Mật khẩu nhập lại không khớp",
     }),
-  role: Joi.string(),
-  addressBorn: Joi.string(),
-  image: Joi.string(),
-  position: Joi.string(),
-  id_number: Joi.string(),
-  birthday: Joi.string(),
-  description: Joi.string(),
 });
 
 export const signInValidator = Joi.object({
